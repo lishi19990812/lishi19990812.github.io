@@ -1,0 +1,31 @@
+<!--头部-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type=text/css href="https://jx.teed.cc:8443/live2d/waifu.css">
+<script src="https://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+
+
+<!--尾部加载-->
+<div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" class="live2d"></canvas>
+    <div class="waifu-tool">
+        <span class="fui-home"></span>
+        <span class="fui-chat"></span>
+        <span class="fui-eye"></span>
+        <span class="fui-user"></span>
+        <span class="fui-photo"></span>
+        <span class="fui-info-circle"></span>
+        <span class="fui-cross"></span>
+    </div>
+</div>
+<script src="https://jx.teed.cc:8443/live2d/jquery-ui.min.js"></script>
+<script src="https://jx.teed.cc:8443/live2d/waifu-tips.js"></script>
+<script src="https://jx.teed.cc:8443/live2d/live2d.js"></script>
+<script type=text/javascript>
+	/* 可直接修改部分参数 */
+    live2d_settings['modelId'] = 5;                  // 默认模型 ID 可在console log查看
+    live2d_settings['modelTexturesId'] = 1;          // 默认材质 ID
+	/* 在 initModel 前添加 */
+
+    initModel("https://jx.teed.cc:8443/live2d/waifu-tips.json");
+</script>
