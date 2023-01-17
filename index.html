@@ -20,10 +20,8 @@
 
 <!--头部-->
 <link rel="stylesheet" type="text/css" href="live2d/waifu.css">
-
-<script src="live2d/jquery-3.5.1.min.js"></script>
+<script src="live2d/jquery-1.8.3.min.js"></script>
 <link rel="stylesheet" href="live2d/font-awesome.min.css">
-
 <!--尾部加载-->
 <div class="waifu">
     <div class="waifu-tips"></div>
@@ -79,35 +77,48 @@ document.oncontextmenu=stop;
 <script type="text/javascript">
 	function change(){
 		var bodyBgs = [];
-bodyBgs[0] = "img/0.jpg";
-bodyBgs[1] = "img/1.jpg";
-bodyBgs[2] = "img/2.jpg";
-bodyBgs[3] = "img/3.jpg";
-bodyBgs[4] = "img/4.jpg";
-bodyBgs[5] = "img/5.jpg";
-bodyBgs[6] = "img/6.jpg";
-bodyBgs[7] = "img/7.jpg";
-bodyBgs[8] = "img/8.jpg";
-bodyBgs[9] = "img/9.png";
-bodyBgs[10] = "img/10.jpg";
-bodyBgs[11] = "img/11.png";
-bodyBgs[12] = "img/12.png";
-bodyBgs[13] = "img/13.png";
-bodyBgs[14] = "img/14.png";
-bodyBgs[15] = "img/15.png";
-bodyBgs[16] = "img/16.png";
-bodyBgs[17] = "img/17.png";
-bodyBgs[18] = "img/18.png";
-bodyBgs[19] = "img/19.jpg";
-bodyBgs[20] = "img/20.jpg";
-bodyBgs[21] = "img/21.jpg";
-bodyBgs[22] = "img/22.jpg";
-bodyBgs[23] = "img/23.jpg";
-bodyBgs[24] = "img/24.jpg";
-bodyBgs[25] = "img/25.jpg";
-bodyBgs[26] = "img/26.png";
+bodyBgs[0] = "img/1/0.jpg";
+bodyBgs[1] = "img/1/1.jpg";
+bodyBgs[2] = "img/1/2.jpg";
+bodyBgs[3] = "img/1/3.jpg";
+bodyBgs[4] = "img/1/4.jpg";
+bodyBgs[5] = "img/1/5.jpg";
+bodyBgs[6] = "img/1/6.jpg";
+bodyBgs[7] = "img/1/7.jpg";
+bodyBgs[8] = "img/1/8.jpg";
+bodyBgs[9] = "img/1/9.png";
+bodyBgs[10] = "img/1/10.jpg";
+bodyBgs[11] = "img/1/11.png";
+bodyBgs[12] = "img/1/12.png";
+bodyBgs[13] = "img/1/13.png";
+bodyBgs[14] = "img/1/14.png";
+bodyBgs[15] = "img/1/15.png";
+bodyBgs[16] = "img/1/16.png";
+bodyBgs[17] = "img/1/17.png";
+bodyBgs[18] = "img/1/18.png";
+bodyBgs[19] = "img/1/19.jpg";
+bodyBgs[20] = "img/1/20.jpg";
+bodyBgs[21] = "img/1/21.jpg";
+bodyBgs[22] = "img/1/22.jpg";
+bodyBgs[23] = "img/1/23.jpg";
+bodyBgs[24] = "img/1/24.jpg";
+bodyBgs[25] = "img/1/25.jpg";
+bodyBgs[26] = "img/1/26.png";
+bodyBgs[27] = "img/2/4e62884d014fd671fc754819e574b91a.png";
+bodyBgs[28] = "img/2/70465152_p01.jpg";
+bodyBgs[29] = "img/2/748914854f090ec91e40d5fd46576578.jpg";
+bodyBgs[30] = "img/2/2021081704315816.jpg";
+bodyBgs[31] = "img/2/2021082013080352.jpg";
+bodyBgs[32] = "img/2/2021082013082051.jpg";
+bodyBgs[33] = "img/2/2021082013083314.jpg";
+bodyBgs[34] = "img/2/2021082013084921.jpg";
+bodyBgs[35] = "img/2/2022022606104171.jpg";
+bodyBgs[36] = "img/2/2022030123585476.jpg";
+bodyBgs[37] = "img/2/2021082606392694.jpg";
+bodyBgs[38] = "img/000.png";
+bodyBgs[39] = "img/bjt.png";
 //注意 bodyBgs[50] 50是当前序号, 按照顺序添加或删除即可, 但是序号必须是连续的 //bodyBgs[] = "";
-		var randomBgIndex = Math.round( Math.random() * 26 );//这里的50是随机取值范围, 取最后一个 bodyBgs[*] 的值即可
+		var randomBgIndex = Math.round( Math.random() * 39 );//这里的50是随机取值范围, 取最后一个 bodyBgs[*] 的值即可
 		//document.write('<style>html{background-image:url(' + bodyBgs[randomBgIndex] + ')}</style>');
 		var img1= document.getElementById('bgimg');
 		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
@@ -141,14 +152,14 @@ bodyBgs[26] = "img/26.png";
 <ul id="top_navlist">
     <a class="top_nav " target="_blank" href="https://www.lsy041.cf"><li><font size="3">永久导航</span></li></a>
 	<a class="top_nav " target="_blank" href="https://www.lsy041.ml"><li><font size="3">备用导航</span></li></a>
-	<a class="top_nav " target="_blank" href="https://www.lsy041.com/ZX"><li>个人中心</li></a>
-	<a class="top_nav " target="_blank" href="https://www.lsy041.com/041"><li>个人主页</li></a>
-    <a class="top_nav " target="_blank" href="https://www.lsy041.com/041/wordpress"><li>站长日记</li></a>
+	<a class="top_nav " target="_blank" href="https://lsy041.com/ZX"><li>个人中心</li></a>
+	<a class="top_nav " target="_blank" href="https://lsy041.com/041"><li>个人主页</li></a>
+    <a class="top_nav " target="_blank" href="https://lsy041.com/041/wordpress"><li>站长日记</li></a>
     <a class="top_nav " target="_blank" href="https://cs.lsy041.com/"><li>资源管理</li>
     <a class="top_nav " target="_blank" href="https://api.lsy041.com/"><li>api接口</li></a>	
 	<a class="top_nav " target="_blank" href="https://dh.lsy041.com/"><li>收藏导航</li></a>
 	<a class="top_nav " target="_blank" href="https://lsy041.eu.org"><li>测试主页</li></a>
-    <a class="top_nav " target="_blank" href="https://m.lsy041.cf"><li>端页游测试</li></a>
+    <a class="top_nav " target="_blank" href="https://m.lsy041.cf"><li>页游测试</li></a>
 	<a class="top_nav " target="_blank" href="tool/HappyBirthday/"><li>生日快乐</li></a>
 	<a class="top_nav " target="_blank" href="GY/"><li>关于</li></a>
 </ul>
