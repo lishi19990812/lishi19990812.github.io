@@ -20,7 +20,7 @@ window.live2d_settings = Array(); /*
 
 
 // 后端接口
-live2d_settings['modelAPI']             = 'https://www.lsy041.cf/live2d/api';   // 自建 API 修改这里
+live2d_settings['modelAPI']             = 'https://lsy041.com/live2d/api';   // 自建 API 修改这里
 live2d_settings['tipsMessage']          = 'waifu-tips.json';            // 同目录下可省略路径
 live2d_settings['hitokotoAPI']          = 'jinrishici.com';                  // 一言 API，可选 'lwl12.com', 'hitokoto.cn', 'jinrishici.com'(古诗词)
 
@@ -66,8 +66,8 @@ live2d_settings['waifuDraggableRevert'] = false;         // 松开鼠标还原�
 // 其他杂项设置
 live2d_settings['l2dVersion']           = '1.4.2';        // 当前版本
 live2d_settings['l2dVerDate']           = '2018.11.12'; // 版本更新日期
-live2d_settings['homePageUrl']          = 'auto';       // 主页地址，可选 'auto'(自动), '{URL 网址}'
-live2d_settings['aboutPageUrl']         = 'https://lsy041.com/ZX';   // 关于页地址, '{URL 网址}'
+live2d_settings['homePageUrl']          = '/';       // 主页地址，可选 'auto'(自动), '{URL 网址}'
+live2d_settings['aboutPageUrl']         = 'ZX';   // 关于页地址, '{URL 网址}'
 live2d_settings['screenshotCaptureName']= 'l2d.png'; // 看板娘截图文件名，例如 'live2d.png'
 
 /****************************************************************************************************/
