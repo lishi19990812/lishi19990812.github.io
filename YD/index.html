@@ -14,8 +14,11 @@ Quote by 041专属
         <!-- 禁用屏幕缩放-->
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
         <!-- 将favicon.ico和apple touch图标放在根目录中 -->
-        <link rel="shortcut icon" href="../favicon.png" >
-        <link rel="Bookmark" href="../favicon.png">
+        <!--禁用开发者模式js-->
+        <script disable-devtool-auto src='../style/js/disable-devtool.min.js'></script>
+<link rel="shortcut icon" href="https://img.lsy041.com/041/favicon.ico" >
+<link rel="Bookmark" href="https://img.lsy041.com/041/favicon.ico">
+<link rel="icon" href="https://img.lsy041.com/041/favicon.ico">
         <!-- 初始化 -->
         <link rel="stylesheet" href="css/normalize.css">        
         <!-- Web字体和Web图标 -->
@@ -41,9 +44,10 @@ Quote by 041专属
 		a:hover{cursor:url(css/pointer.cur),pointer;}//链接选择效果
 		</style>
     </head>
+    <body id="menu" class="alt-bg">
 <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
 <!--这部分是字体-->
-<style>@font-face{font-family: 'zti';src: url('https://www.lsy041.cf/字体/小可爱.ttc');}body{font-family:'zti' !important;}</style>
+<!--<style>@font-face{font-family: 'zti';src: url('//lsy041.com/style/小可爱.ttc');}body{font-family:'zti' !important;}</style>-->
 <!--社会主义核心价值观-->
 <script >var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("🍉富强🍉","🎉虎虎生威🎉","🍉民主🍉","🍉文明🍉","🧧恭喜发财🧧","🎉金虎送福🎉","🍉和谐🍉","🍉自由🍉","🍉平等🍉","🎉龙腾虎跃🎉","🙈关注关注🙈","🍉公正🍉","🍉法治🍉","🍉欢迎光临🍉","🍉爱国🍉","🍉诚信🍉","🍉友善🍉");var b = new Array("red","blue","yellow","green","pink","blue","orange");var $i = $("<span/>").text(a[a_idx]);a_idx = (a_idx + 1) % a.length;b_idx = (a_idx+1)%7;var x = e.pageX,y = e.pageY;$i.css({"z-index": 9999,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": b[b_idx]});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});</script>
 <!--顶部标题-->
@@ -64,8 +68,7 @@ function() {
     }
 });
 </script>
-<!--禁用开发者模式js-->
-<script disable-devtool-auto src='../style/js/disable-devtool.min.js'></script>
+
 <!--禁用开发者模式-->
 <script>
 //调用开发者debugger模式
@@ -88,82 +91,8 @@ setInterval(function () {
             } catch (err) { }
         };
         check(); 
-//打开开发者模式直接跳转|ps：如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
-/*var h = window.innerHeight,
-            w = window.innerWidth;
-        window.onresize = function () {
-            if (h != window.innerHeight || w != window.innerWidth) {
-                window.location = "https://lsy041.com/404.html";
-            }
-        };
-//监视DOM修改|ps:只要修改页面元素我就重新加载（不支持IE9以下浏览器）
-
-if (window.addEventListener) {
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMAttributeNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMElementNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInserted", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInsertedIntoDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemoved", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemovedFromDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMSubtreeModified", function () { window.location.reload(); }, true);
-        }
-*/
 </script>
-<!--这部分是禁止F12-->
-<!--<script src="style/js/vue.js"></script>
-<script src="style/F12.js"></script>
-<link rel="stylesheet" href="style/css/F12.css">
-<script>document.onkeydown = function () {
-if (window.event && window.event.keyCode == 123) {
-  event.keyCode = 0;
-  event.returnValue = false;
-    new Vue({
-            data:function(){
-                this.$notify({
-                    title:"嘿！别瞎按",
-                    message:"抓到你了！",
-                    position: 'bottom-right',
-                    offset: 50,
-                    showClose: false,
-                    type:"error"
-                });
-                return{visible:false}
-            }
-        })
-  return false;}};</script>
- -->
-<!--这部分是禁止网页右键，不需要的话自己删掉-->
-<!--
-<script> 
-function stop(){ 
-return false; 
-} 
-document.oncontextmenu=stop; 
-
-	function click(e) {
-		if (document.layers) {
-			if (e.which == 3) {
-				oncontextmenu='return false';
-			}
-		}
-	}
-	if (document.layers) {
-		document.captureEvents(Event.MOUSEDOWN);
-	}
-	document.onmousedown=click;
-	document.oncontextmenu = new Function("return false;")
-	document.onkeydown =document.onkeyup = document.onkeypress=function(){ 
-		if(window.event.keyCode == 123) { 
-			window.event.returnValue=false;
-			return(false); 
-		} 
-	}
-</script>
--->
 <!--禁止开发者工具-->
-<!--
 <script>
 //按键触发
 document.onkeydown = function(){
@@ -201,36 +130,8 @@ document.body.onselectstart = function() {
 };
 //禁用图片拖放
 document.ondragstart = function(){return false};
-
-//彻底屏蔽鼠标右键|二选一
-/*
-oncontextmenu="window.event.returnvalue=false"
-<table border oncontextmenu=return(false)><td>no</table> //可用于Table
-*/
 </script>
--->
-<!--防复制和防鼠标右键-->
-<!--
-<script language="JavaScript">
-    document.oncontextmenu = new Function('event.returnValue=false;');
-    document.onselectstart = new Function('event.returnValue=false;');
--->
-<!--防复制和防鼠标右键|二选一-->
-<!--
-<script type="text/javascript">
-    document.body.oncontextmenu = 
-    document.body.ondragstart = 
-    document.body.onselectstart = 
-    document.body.onbeforecopy = 
-    function () { return false; };
- 
-    document.body.onselect = 
-    document.body.oncopy = 
-    document.body.onmouseup = 
-    function () { document.selection.empty(); };
-</script>-->
 <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
-    <body id="menu" class="alt-bg">
         <!--[if lt IE 8]>
             <p class="browsehappy">您正在使用<strong>过时的</strong>浏览器。请 <a href="https://browsehappy.com/">升级浏览器</a> 以改善您的体验。</p>
         <![endif]-->
@@ -252,7 +153,7 @@ data date=“10/01/2022 08:30:00”发布日期
 <!--		<header class="header-top material">-->
 			<div class="logo">
 				<a href="#home">
-					<img src="../img/002.png" alt="Logo Brand">
+					<img src="https://img.lsy041.com/041/002.png" alt="Logo Brand">
 				</a>
 			</div>
             <div class="menu clearfix">
@@ -263,12 +164,6 @@ data date=“10/01/2022 08:30:00”发布日期
 			<a href=""><img width="149" height="149" src="images/github.png" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
 		</header>
 -->
-<header class="header-github">
-<font style="width:300px;margin:0 auto; padding:20px 0;font-size:16px"><img src="https://icp.gov.moe/favicon.ico" style="width:25px;height:25px;margin-bottom:-5px"/>
-<a target="_blank" href="https://icp.gov.moe" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-<span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span>
- </a><a href="https://icp.gov.moe/?keyword=20234014" target="_blank" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" > <span style="color:#ff0000">20</span><span style="color:#ca7900">23</span><span style="color:#48ab18">40</span><span style="color:#2720ac">14</span><span style="color:#f40428">号</span></a></font> 
-</header> 
         <!-- 站点标题菜单结束-->
         
         <!-- 左侧快速导航图标开始 -->
@@ -307,45 +202,45 @@ data date=“10/01/2022 08:30:00”发布日期
         <div class="page-cover" id="home">
 		
             <!-- 封面背景 -->
-            <div class="cover-bg pos-abs full-size bg-img" data-image-src="../img/1/4.jpg"></div>
+            <div class="cover-bg pos-abs full-size bg-img" data-image-src="https://img.lsy041.com/壁纸/4.jpg"></div>
 
             <!-- 幻灯片背景开始 -->
             <div class="cover-bg pos-abs full-size slide-show">
-				<i class="img" data-src="../img/1/1.jpg"></i>
-				<i class="img" data-src="../img/1/2.jpg"></i>
-                <i class="img" data-src="../img/1/3.jpg"></i>
-				<i class="img" data-src="../img/1/4.jpg"></i>
-				<i class="img" data-src="../img/1/5.jpg"></i>
-				<i class="img" data-src="../img/1/6.jpg"></i>
-				<i class="img" data-src="../img/1/7.jpg"></i>
-				<i class="img" data-src="../img/1/8.jpg"></i>
-				<i class="img" data-src="../img/1/9.png"></i>
-				<i class="img" data-src="../img/1/10.jpg"></i>
-				<i class="img" data-src="../img/1/11.png"></i>
-				<i class="img" data-src="../img/1/12.png"></i>
-				<i class="img" data-src="../img/1/13.png"></i>
-				<i class="img" data-src="../img/1/14.png"></i>
-				<i class="img" data-src="../img/1/15.png"></i>
-				<i class="img" data-src="../img/1/16.png"></i>
-				<i class="img" data-src="../img/1/17.png"></i>
-				<i class="img" data-src="../img/1/18.png"></i>
-				<i class="img" data-src="../img/1/19.jpg"></i>
-				<i class="img" data-src="../img/1/20.jpg"></i>
-				<i class="img" data-src="../img/1/21.jpg"></i>
-				<i class="img" data-src="../img/1/22.jpg"></i>
-				<i class="img" data-src="../img/1/23.jpg"></i>
-				<i class="img" data-src="../img/1/24.jpg"></i>
-				<i class="img" data-src="../img/1/25.jpg"></i>
-				<i class="img" data-src="../img/1/26.png"></i>
-				<i class="img" data-src="../img/1/27.jpg"></i>
-				<i class="img" data-src="../img/1/28.jpg"></i>
-				<i class="img" data-src="../img/1/29.jpg"></i>
-				<i class="img" data-src="../img/1/30.jpg"></i>
-				<i class="img" data-src="../img/1/31.jpg"></i>
-				<i class="img" data-src="../img/1/32.jpg"></i>
-				<i class="img" data-src="../img/1/33.jpg"></i>
-				<i class="img" data-src="../img/1/34.jpg"></i>
-				<i class="img" data-src="../img/1/35.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/1.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/2.jpg"></i>
+                <i class="img" data-src="https://img.lsy041.com/壁纸/3.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/4.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/5.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/6.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/7.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/8.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/9.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/10.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/11.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/12.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/13.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/14.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/15.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/16.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/17.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/18.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/19.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/20.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/21.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/22.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/23.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/24.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/25.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/26.png"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/27.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/28.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/29.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/30.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/31.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/32.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/33.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/34.jpg"></i>
+				<i class="img" data-src="https://img.lsy041.com/壁纸/35.jpg"></i>
 
 			</div>
             <!-- 幻灯片放映结束背景 -->
@@ -501,7 +396,7 @@ data date=“10/01/2022 08:30:00”发布日期
 <!-- 左边 -->
 <div class="sender">
   <div>
-    <img src="../img/lolisister2.gif">
+    <img src="https://img.lsy041.com/041/lolisister2.gif">
   </div>
   <div>
     <div class="left_triangle"></div>
@@ -511,7 +406,7 @@ data date=“10/01/2022 08:30:00”发布日期
 <!-- 右边 -->
 <div class="receiver">
   <div>
-    <img src="../img/load-041loli.gif">
+    <img src="https://img.lsy041.com/041/load-041loli.gif">
   </div>
   <div>
     <div class="right_triangle"></div>
@@ -552,6 +447,13 @@ data date=“10/01/2022 08:30:00”发布日期
 											<h4>QQ</h4>
 											<p><a href="http://wpa.qq.com/msgrd?v=3&uin=804523707&site=qq&menu=yes" target="_blank">804523707</a></p>
 										</li>
+										<p>&nbsp;</p>
+										<li>
+                                        <font style="width:300px;margin:0 auto; padding:20px 0;font-size:16px"><img src="https://icp.gov.moe/favicon.ico" style="width:25px;height:25px;margin-bottom:-5px"/>
+                                        <a target="_blank" href="https://icp.gov.moe" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                                         <span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span>
+                                        </a><a href="https://icp.gov.moe/?keyword=20234041" target="_blank" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" > <span style="color:#ff0000">20</span><span style="color:#ca7900">23</span><span style="color:#48ab18">40</span><span style="color:#2720ac">41</span><span style="color:#f40428">号</span></a></font> 
+                                        </li>
 									</ul>
 								</div>
 								<div class="medium-6 columns social-links right">
@@ -576,7 +478,7 @@ data date=“10/01/2022 08:30:00”发布日期
 											<!-- 社交链接结束 -->
 										</li>
 										<li>
-											<p><a href="https://lsy041.com"><img src="../img/lsy041.png" alt="Logo" class="logo"></a></p>
+											<p><a href="https://lsy041.com"><img src="https://img.lsy041.com/041/lsy041.png" alt="Logo" class="logo"></a></p>
 											<span style="color:#48ab18">Copyright</span><a href="https://lsy041.com"><span style="color:#ff0000">041专属</span></a><span style="color:#9b17ae"> &copy;</span><span style="color:#ca7900"><script>document.write(new Date().getFullYear())</script></span><span style="color:#2720ac"> All Rights Reserved</span>
 										</li>
 									</ul>

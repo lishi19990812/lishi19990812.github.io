@@ -9,16 +9,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" href="../favicon.png" >
-        <link rel="Bookmark" href="../favicon.png">
+<link rel="shortcut icon" href="https://img.lsy041.com/041/favicon.ico" >
+<link rel="Bookmark" href="https://img.lsy041.com/041/favicon.ico">
+<link rel="icon" href="https://img.lsy041.com/041/favicon.ico">
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
+		
 <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
 <!--这部分是字体-->
-<style>@font-face{font-family: 'zti';src: url('https://www.lsy041.cf/字体/小可爱.ttc');}body{font-family:'zti' !important;}</style>
+<style>@font-face{font-family: 'zti';src: url('../style/小可爱.ttc');}body{font-family:'zti' !important;}</style>
 <!--社会主义核心价值观-->
 <script >var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("🍉富强🍉","🎉虎虎生威🎉","🍉民主🍉","🍉文明🍉","🧧恭喜发财🧧","🎉金虎送福🎉","🍉和谐🍉","🍉自由🍉","🍉平等🍉","🎉龙腾虎跃🎉","🙈关注关注🙈","🍉公正🍉","🍉法治🍉","🍉欢迎光临🍉","🍉爱国🍉","🍉诚信🍉","🍉友善🍉");var b = new Array("red","blue","yellow","green","pink","blue","orange");var $i = $("<span/>").text(a[a_idx]);a_idx = (a_idx + 1) % a.length;b_idx = (a_idx+1)%7;var x = e.pageX,y = e.pageY;$i.css({"z-index": 9999,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": b[b_idx]});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});</script>
+<!--复制提1-->
+<script src="../style/js/copythree.js"></script>
+<link rel="stylesheet" href="../style/css/copythree.css" />
+<script>function copy_remind(){toastr.success("撰文不易，若要转载请务必保留原文链接，谢谢！", "复制成功！");  clear_toastr(1600);   function clear_toastr(time){setTimeout(function(){toastr.clear();}, time);  }}document.addEventListener("copy",function(e){  if(window.getSelection(0).toString()){ copy_remind();} else{toastr.info("当前未选择复制的内容！", "温馨提示");}});</script>
+<!--复制提2-->
+<script src="../style/js/copyvue.js"></script>
+<script src="../style/js/copyfour.js"></script>
+<link rel="stylesheet" href="../style/css/copyfour.css">
+<script>document.addEventListener("copy",function(e){ new Vue({data:function(){this.$notify({title:"复制成功！",message:"若要转载请保留原文链接！mua~",position: 'bottom-right', offset: 50,showClose: false,type:"success"});return{visible:false}}})})</script>
 <!--顶部标题-->
 <script>
 var OriginTitile = document.title,
@@ -61,82 +71,8 @@ setInterval(function () {
             } catch (err) { }
         };
         check(); 
-//打开开发者模式直接跳转|ps：如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
-/*var h = window.innerHeight,
-            w = window.innerWidth;
-        window.onresize = function () {
-            if (h != window.innerHeight || w != window.innerWidth) {
-                window.location = "https://lsy041.com/404.html";
-            }
-        };
-//监视DOM修改|ps:只要修改页面元素我就重新加载（不支持IE9以下浏览器）
-
-if (window.addEventListener) {
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMAttributeNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMElementNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInserted", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInsertedIntoDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemoved", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemovedFromDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMSubtreeModified", function () { window.location.reload(); }, true);
-        }
-*/
 </script>
-<!--这部分是禁止F12-->
-<!--<script src="style/js/vue.js"></script>
-<script src="style/F12.js"></script>
-<link rel="stylesheet" href="style/css/F12.css">
-<script>document.onkeydown = function () {
-if (window.event && window.event.keyCode == 123) {
-  event.keyCode = 0;
-  event.returnValue = false;
-    new Vue({
-            data:function(){
-                this.$notify({
-                    title:"嘿！别瞎按",
-                    message:"抓到你了！",
-                    position: 'bottom-right',
-                    offset: 50,
-                    showClose: false,
-                    type:"error"
-                });
-                return{visible:false}
-            }
-        })
-  return false;}};</script>
- -->
-<!--这部分是禁止网页右键，不需要的话自己删掉-->
-<!--
-<script> 
-function stop(){ 
-return false; 
-} 
-document.oncontextmenu=stop; 
-
-	function click(e) {
-		if (document.layers) {
-			if (e.which == 3) {
-				oncontextmenu='return false';
-			}
-		}
-	}
-	if (document.layers) {
-		document.captureEvents(Event.MOUSEDOWN);
-	}
-	document.onmousedown=click;
-	document.oncontextmenu = new Function("return false;")
-	document.onkeydown =document.onkeyup = document.onkeypress=function(){ 
-		if(window.event.keyCode == 123) { 
-			window.event.returnValue=false;
-			return(false); 
-		} 
-	}
-</script>
--->
 <!--禁止开发者工具-->
-<!--
 <script>
 //按键触发
 document.onkeydown = function(){
@@ -174,35 +110,9 @@ document.body.onselectstart = function() {
 };
 //禁用图片拖放
 document.ondragstart = function(){return false};
-
-//彻底屏蔽鼠标右键|二选一
-/*
-oncontextmenu="window.event.returnvalue=false"
-<table border oncontextmenu=return(false)><td>no</table> //可用于Table
-*/
 </script>
--->
-<!--防复制和防鼠标右键-->
-<!--
-<script language="JavaScript">
-    document.oncontextmenu = new Function('event.returnValue=false;');
-    document.onselectstart = new Function('event.returnValue=false;');
--->
-<!--防复制和防鼠标右键|二选一-->
-<!--
-<script type="text/javascript">
-    document.body.oncontextmenu = 
-    document.body.ondragstart = 
-    document.body.onselectstart = 
-    document.body.onbeforecopy = 
-    function () { return false; };
- 
-    document.body.onselect = 
-    document.body.oncopy = 
-    document.body.onmouseup = 
-    function () { document.selection.empty(); };
-</script>-->
 <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
+	</head>
 	<body class="landing">
 		<div id="page-wrapper">
 
@@ -211,11 +121,12 @@ oncontextmenu="window.event.returnvalue=false"
 					<h1 id="logo"><a href="../">041专属</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="./">首页</a></li>
-							<li><a href="../tool/壁纸">壁纸分享</a>
-							<li><a href="../tool/动漫/">动漫分享</a>
-					        <li><a href="../tool/小说/">小说分享</a></li>
-							<li><a href="https://www.lsy041.cf" target="_blank" class="button special">041永久导航</a></li>
+							<li><a href="//lsy041.com/Download/">下载地址</a></li>
+							
+							<li><a href="//lsy041.com/tool/壁纸">壁纸分享</a>
+							<li><a href="//lsy041.com/tool/动漫/">动漫分享</a>
+					        <li><a href="//lsy041.com/tool/小说/">小说分享</a></li>
+							<li><a href="https://lsy041.com" target="_blank" class="button special">041专属</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -292,7 +203,7 @@ oncontextmenu="window.event.returnvalue=false"
 						</header>
 						<p>轻微大佬各种动漫网站源码的下载，弹幕网，个人引导页，导航网站，只要是动漫风的网页都很喜欢</p>
 						<ul class="actions">
-							<li><a href="https://hmoe.top/" target="_blank" class="button">进入萌幻の乡</a></li>
+							<li><a href="https://hmoe.top/" target="_blank" class="button">进入萌幻 の 乡</a></li>
 						    <li><a href="https://www.xacgn.cn/" target="_blank" class="button">进入仙女次元</a></li>
 							<li><a href="https://www.qwbk.net/" target="_blank" class="button">进入轻微博客</a></li>
 						</ul>
@@ -312,13 +223,13 @@ oncontextmenu="window.event.returnvalue=false"
 							<div class="row uniform">
 								<section class="4u 6u(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-area-chart"></span>
-									<h3>分享</h3>
-									<p>寻找、分享一些大家都喜欢或者非常火的动漫。</p>
-									<a href="https://lsy041.com/041/wordpress" target="_blank" class="button">分享地址</a>
+									<h3>分享导航</h3>
+									<p>寻找、分享一些大家都喜欢或者非常火的动漫，收藏了一写网址导航链接。</p>
+									<a href="https://dh.lsy041.com" target="_blank" class="button">进入导航</a>
 								</section>
 								<section class="4u 6u$(medium) 12u$(xsmall)">
 									<span class="icon alt major fa-comment"></span>
-									<h3>主页</h3>
+									<h3>个人主页</h3>
 									<p>041专属是一个个人网站，记录生活，写写日记心得，收录、学习、改造源码的个人主页。</p>
 									<a href="https://lsy041.com/041" target="_blank" class="button">进入主页</a>
 								</section>
@@ -326,7 +237,7 @@ oncontextmenu="window.event.returnvalue=false"
 									<span class="icon alt major fa-flask"></span>
 									<h3>网络小笨蛋</h3>
 									<p>会玩电脑，会上网，喜欢学习新知识，但是不会做自己喜欢事物的小笨蛋！ (๑•ั็ω•็ั๑)</p>
-									<a href="https://lsy041.com" target="_blank" class="button">进入导航</a>
+									<a href="https://lsy041.com" target="_blank" class="button">进入网站</a>
 								</section>
 					
 
@@ -345,7 +256,8 @@ oncontextmenu="window.event.returnvalue=false"
 		
 					<p>邮箱：mynameis041@vip.qq.com</p>
 				    <p>QQ：804523707</p>
-                    <audio autoplay="autoplay"><source src="/mengzhan.mp3" type="audio/mpeg" /></audio>
+				    
+                    <!--<audio autoplay="autoplay"><source src="mengzhan.mp3" type="audio/mpeg" /></audio>-->
 					</div>
 				</section>
 
@@ -354,7 +266,7 @@ oncontextmenu="window.event.returnvalue=false"
 					<ul class="icons">
 						<!--<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>-->
 <!--网站运行时间-->
-<li>网站: <a href=".././">041专属</a> 在各种灾难中走过了：<span id="sitetime" style="color: #fb5466;"></span>
+<font size="5"><li>网站: <a href=".././">041专属</a> 在各种灾难中走过了：<span id="sitetime" style="color: #fb5466;"></span></font>
 <script language=javascript>
     function siteTime(){
         window.setTimeout("siteTime()", 1000);
@@ -378,7 +290,7 @@ oncontextmenu="window.event.returnvalue=false"
         minutes - 0-59之间的整数，做为date对象的分钟数
         seconds - 0-59之间的整数，做为date对象的秒数
         microseconds - 0-999之间的整数，做为date对象的毫秒数 */
-        var t1 = Date.UTC(2018,10,01,08,30,00); //北京时间2022-6-01 07:00:00
+        var t1 = Date.UTC(2022,10,01,07,30,00); //北京时间2022-6-01 07:00:00
         var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
         var diff = t2-t1;
         var diffYears = Math.floor(diff/years);
@@ -395,12 +307,20 @@ oncontextmenu="window.event.returnvalue=false"
 
 <!--041专属ICP备案信息-->
                          <p>
-                         <font style="font-size:16px"><img style="width:32px;height:32px;margin-bottom:-8px" src="../style/icp.gov.moe.png" /><a href="https://icp.gov.moe" target="_blank"><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20234014" target="_blank"> <span style="color:#ff0000">20</span><span style="color:#ca7900">23</span><span style="color:#48ab18">40</span><span style="color:#2720ac">14</span><span style="color:#f40428">号</span></a></font>
+					     <font style="font-size:16px"><img style="width:25px;height:25px;margin-bottom:-5px" src="https://www.lsy041.cf/style/gongshang.png" /><a href="https://beian.miit.gov.cn/" target="_blank" ><span style="color:#ff0000">湘ICP备2022024249号</a></font>
+					     
+                         <font style="font-size:16px"><img style="width:25px;height:25px;margin-bottom:-5px" src="https://www.lsy041.cf/style/icpg.png" /><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43312202000177" target="_blank" ><span style="color:#ff0000">湘公网安备43312202000177号</a></font>
+                         
+                         <font style="font-size:16px"><img style="width:32px;height:32px;margin-bottom:-8px" src="../style/icp.gov.moe.png" /><a href="https://icp.gov.moe" target="_blank"><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20224041" target="_blank"> <span style="color:#ff0000">20</span><span style="color:#ca7900">22</span><span style="color:#48ab18">40</span><span style="color:#2720ac">41</span><span style="color:#f40428">号</span></a></font>
 						 </p>
-						<p><a  target="_blank" class="top_hr_style02"></a>Copyright 041专属  <span> &copy; </span><script>document.write(new Date().getFullYear())</script>  All rights reserved.</li></p>
+						 
+						 <p><font size="4"> <span style="color:#48ab18">Copyright</span> <span style="color:#ff0000">041专属</a></span> <span style="color:#9b17ae"> &copy;</span><span style="color:#ca7900"><script>document.write(new Date().getFullYear())</script></span><span style="color:#2720ac"> All Rights Reserved</span></font>  </p> 
+						 
+						 <!--
+						<p><a  target="_blank" class="top_hr_style02"></a>Copyright 041专属  <span> &copy; </span><script>document.write(new Date().getFullYear())</script>  All rights reserved.</li></p>-->
 					</ul>
 				</footer>
-		</div>
+<!--		</div>-->
 		
 <!-- &copy计时 -->
 <!--已废弃
@@ -414,7 +334,6 @@ oncontextmenu="window.event.returnvalue=false"
     setTimeout("show()",1000); //设置过1000毫秒就是1秒，调用show方法 
  } 
 </script> 
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -425,3 +344,4 @@ oncontextmenu="window.event.returnvalue=false"
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 	</body>
+</html>

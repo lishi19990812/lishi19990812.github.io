@@ -6,8 +6,9 @@
 -->
 <html>
 	<head>
-    <link rel="shortcut icon" href="img/f-logo.png" >
-    <link rel="Bookmark" href="img/f-logo.png">
+<link rel="shortcut icon" href="https://img.lsy041.com/041/favicon.ico" >
+<link rel="Bookmark" href="https://img.lsy041.com/041/favicon.ico">
+<link rel="icon" href="https://img.lsy041.com/041/favicon.ico">
     <title>041专属 - 个人中心</title>
     <meta name="keywords" content="041专属,个人简介,个人介绍,个人主页，个人空间，个人中心">
     <meta name="description" content="041专属个人中心 ">
@@ -27,9 +28,13 @@
 	 </head>
 <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
 <!--这部分是字体-->
-<style>@font-face{font-family: 'zti';src: url('https://www.lsy041.cf/字体/小可爱.ttc');}body{font-family:'zti' !important;}</style>
+<style>@font-face{font-family: 'zti';src: url('../style/小可爱.ttc');}body{font-family:'zti' !important;}</style>
 <!--社会主义核心价值观-->
 <script >var a_idx = 0;jQuery(document).ready(function($) {$("body").click(function(e) {var a = new Array("🍉富强🍉","🎉虎虎生威🎉","🍉民主🍉","🍉文明🍉","🧧恭喜发财🧧","🎉金虎送福🎉","🍉和谐🍉","🍉自由🍉","🍉平等🍉","🎉龙腾虎跃🎉","🙈关注关注🙈","🍉公正🍉","🍉法治🍉","🍉欢迎光临🍉","🍉爱国🍉","🍉诚信🍉","🍉友善🍉");var b = new Array("red","blue","yellow","green","pink","blue","orange");var $i = $("<span/>").text(a[a_idx]);a_idx = (a_idx + 1) % a.length;b_idx = (a_idx+1)%7;var x = e.pageX,y = e.pageY;$i.css({"z-index": 9999,"top": y - 20,"left": x,"position": "absolute","font-weight": "bold","color": b[b_idx]});$("body").append($i);$i.animate({"top": y - 180,"opacity": 0},1500,function() {$i.remove();});});});</script>
+<!--复制提1-->
+<script src="../style/js/copythree.js"></script>
+<link rel="stylesheet" href="../style/css/copythree.css" />
+<script>function copy_remind(){toastr.success("撰文不易，若要转载请务必保留原文链接，谢谢！", "复制成功！");  clear_toastr(1600);   function clear_toastr(time){setTimeout(function(){toastr.clear();}, time);  }}document.addEventListener("copy",function(e){  if(window.getSelection(0).toString()){ copy_remind();} else{toastr.info("当前未选择复制的内容！", "温馨提示");}});</script>
 <!--顶部标题-->
 <script>
 var OriginTitile = document.title,
@@ -72,82 +77,8 @@ setInterval(function () {
             } catch (err) { }
         };
         check(); 
-//打开开发者模式直接跳转|ps：如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
-/*var h = window.innerHeight,
-            w = window.innerWidth;
-        window.onresize = function () {
-            if (h != window.innerHeight || w != window.innerWidth) {
-                window.location = "https://lsy041.com/404.html";
-            }
-        };
-//监视DOM修改|ps:只要修改页面元素我就重新加载（不支持IE9以下浏览器）
-
-if (window.addEventListener) {
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMAttributeNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMCharacterDataModified", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMElementNameChanged", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInserted", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeInsertedIntoDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemoved", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMNodeRemovedFromDocument", function () { window.location.reload(); }, true);
-            window.addEventListener("DOMSubtreeModified", function () { window.location.reload(); }, true);
-        }
-*/
 </script>
-<!--这部分是禁止F12-->
-<!--<script src="style/js/vue.js"></script>
-<script src="style/F12.js"></script>
-<link rel="stylesheet" href="style/css/F12.css">
-<script>document.onkeydown = function () {
-if (window.event && window.event.keyCode == 123) {
-  event.keyCode = 0;
-  event.returnValue = false;
-    new Vue({
-            data:function(){
-                this.$notify({
-                    title:"嘿！别瞎按",
-                    message:"抓到你了！",
-                    position: 'bottom-right',
-                    offset: 50,
-                    showClose: false,
-                    type:"error"
-                });
-                return{visible:false}
-            }
-        })
-  return false;}};</script>
- -->
-<!--这部分是禁止网页右键，不需要的话自己删掉-->
-<!--
-<script> 
-function stop(){ 
-return false; 
-} 
-document.oncontextmenu=stop; 
-
-	function click(e) {
-		if (document.layers) {
-			if (e.which == 3) {
-				oncontextmenu='return false';
-			}
-		}
-	}
-	if (document.layers) {
-		document.captureEvents(Event.MOUSEDOWN);
-	}
-	document.onmousedown=click;
-	document.oncontextmenu = new Function("return false;")
-	document.onkeydown =document.onkeyup = document.onkeypress=function(){ 
-		if(window.event.keyCode == 123) { 
-			window.event.returnValue=false;
-			return(false); 
-		} 
-	}
-</script>
--->
 <!--禁止开发者工具-->
-<!--
 <script>
 //按键触发
 document.onkeydown = function(){
@@ -180,39 +111,14 @@ document.body.oncontextmenu = function() {
   self.event.returnValue=false
 };
 //网站禁止选择文字
+/*
 document.body.onselectstart = function() {
   self.event.returnValue=false
 };
+*/
 //禁用图片拖放
 document.ondragstart = function(){return false};
-
-//彻底屏蔽鼠标右键|二选一
-/*
-oncontextmenu="window.event.returnvalue=false"
-<table border oncontextmenu=return(false)><td>no</table> //可用于Table
-*/
 </script>
--->
-<!--防复制和防鼠标右键-->
-<!--
-<script language="JavaScript">
-    document.oncontextmenu = new Function('event.returnValue=false;');
-    document.onselectstart = new Function('event.returnValue=false;');
--->
-<!--防复制和防鼠标右键|二选一-->
-<!--
-<script type="text/javascript">
-    document.body.oncontextmenu = 
-    document.body.ondragstart = 
-    document.body.onselectstart = 
-    document.body.onbeforecopy = 
-    function () { return false; };
- 
-    document.body.onselect = 
-    document.body.oncopy = 
-    document.body.onmouseup = 
-    function () { document.selection.empty(); };
-</script>-->
 <!--++++++++++||||||||||++++++++++041专属自动部分++++++++++||||||||||++++++++++-->
 	 <body class="is-loading-0 is-loading-1">
 		<!-- Wrapper -->
@@ -264,7 +170,8 @@ oncontextmenu="window.event.returnvalue=false"
 				<!-- my -->
 					<article id="my" class="panel secondary">
 						<div class="image">
-							<img src="img/2.jpg" alt="" data-position="center center">
+						    <img src="https://img.lsy041.com/其他/26.png" alt="" data-position="center center">
+							<!--<img src="img/2.jpg" alt="" data-position="center center">-->
 						</div>
 						<div class="content">
 							<ul class="actions spinX">
@@ -299,7 +206,8 @@ oncontextmenu="window.event.returnvalue=false"
 				<!-- Contact -->
 					<article id="contact" class="panel secondary">
 						<div class="image">
-							<img src="img/3.jpg" alt="" data-position="bottom center">
+						    <img src="https://img.lsy041.com/其他/11.jpg" alt="" data-position="center center">
+							<!--<img src="img/3.jpg" alt="" data-position="bottom center">-->
 						</div>
 						<div class="content">
 							<ul class="actions spinX">
@@ -340,7 +248,7 @@ oncontextmenu="window.event.returnvalue=false"
 				<!-- Work -->
 					<article id="work" class="panel secondary">
 						<div class="image">
-							<img src="img/lolisister2.gif" alt="" data-position="center center">
+							<img src="https://img.lsy041.com/其他/041.gif" alt="" data-position="center center">
 						</div>
 						<div class="content">
 							<ul class="actions spinX">
@@ -356,36 +264,8 @@ oncontextmenu="window.event.returnvalue=false"
 								<h5>所有记忆</h5>
 								<ul class="alt" style="height: 350px;overflow: auto;">
 										<li>2023年-2099年 00:00:00<br>总不能看见未来对吧...</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>家里好像搬家了，搬到了四大家7栋（柴房）最下面，但是家里好像没有窗户~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>有一段记忆好像也没了，想不起来了~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>小哥回来了，可以陪我玩了，好开心~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>我想去外面玩，但是铁门好像被锁住了，出不去~</li>
-										<li>2001年-2008年 具体时间忘记了：<br>妈妈好像是去卖菜了，好多菜叶啊~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>晚上妈妈终于回来了，但是天都黑了~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>楼梯对面的人，好像去祂家玩过，但是忘记了呐~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>家里好像来客人了，但是我忘记是谁了~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>今天爸爸吃完饭，骑车带我出去玩了好开心~地上全是沙子，但是风真舒服~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>爸爸推着自信车上班去了，让我不要趴在窗户上面，赶紧下去~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>墙角三角形柜子的小抽屉里面有好吃的，我吃掉啦~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>大哥长什么样子呐？为什么感觉好像没看到过大哥~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>姐姐今天来了，感觉好久没看到姐姐了，还给我带了好吃的~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>小哥去上学了，我也好想出门，家里一个人好没味啊~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>妈妈好忙啊，每天早上就没看的人了~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>有一个正方形的大电视放在很旧、普通的木桌子上，有线电视经常坏，拍两下就好了~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>墙角有一个三角形的木桌子~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>家里很小，具体什么样子已经忘记了~</li>
-										<li>2001年-2002年 具体时间忘记了：<br>一直呆在（辛女广场老房子好像在楼上）家里好无聊啊，看着爸爸推着自信车在楼下走过~</li>
-										<li>1999年8月12日-2001年 具体时间忘记了：<br>我也不知道发生了什么，这段记忆好像没有了，想不起来~</li>
+									<!--
+									-->	<li>1999年8月12日-2001年 具体时间忘记了：<br>我也不知道发生了什么，这段记忆好像没有了，想不起来~</li>
 										<li>1999年8月12日 ：<br>我来到这个世界了呐~</li>
 									</ul>
 							</div>
@@ -395,7 +275,8 @@ oncontextmenu="window.event.returnvalue=false"
 				<!-- Contact -->
 					<article id="ts" class="panel secondary">
 						<div class="image">
-							<img src="img/1.jpg" alt="" data-position="bottom center">
+						    <img src="https://img.lsy041.com/其他/24.jpg" alt="" data-position="center center">
+							<!--<img src="img/1.jpg" alt="" data-position="bottom center">-->
 						</div>
 						<div class="content">
 							<ul class="actions spinX">
@@ -422,8 +303,7 @@ oncontextmenu="window.event.returnvalue=false"
                                  <h5> 小白：欸嘿~</h5>
                                  <p>就没人记得我嘛~</p>
                             </div>
- 
-
+ <!--
 <div id="smart-button-container">
     <div style="text-align: center"><label for="description"><b id="nr">留下你珍贵的名字哦~ </b> </label><input type="text" name="descriptionInput" id="description" maxlength="127" value=""></div>
       <p id="descriptionError" style="visibility: hidden; color:red; text-align: center;">请留下你名字和备注哦~</p>
@@ -545,6 +425,7 @@ oncontextmenu="window.event.returnvalue=false"
   }
   initPayPalButton();
   </script>
+-->
                           
 									<ul class="alt">
 										<li></a> 041专属个人主页：<a href="https://lsy041.com" target="_blank">快进去看看啊喂！</a></li>
@@ -615,10 +496,9 @@ oncontextmenu="window.event.returnvalue=false"
 
 				<!-- Footer -->
 					<footer id="footer">
-					    <p><font style="width:300px;margin:0 auto; padding:20px 0;font-size:16px"><img src="https://icp.gov.moe/favicon.ico" style="width:25px;height:25px;margin-bottom:-5px"/>
-                        <a target="_blank" href="https://icp.gov.moe" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
-                        <span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span>
-                        </a><a href="https://icp.gov.moe/?keyword=20234014" target="_blank" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" > <span style="color:#ff0000">20</span><span style="color:#ca7900">23</span><span style="color:#48ab18">40</span><span style="color:#2720ac">14</span><span style="color:#f40428">号</span></a></font> </p>
+					    <p><font style="font-size:16px"><img style="width:25px;height:25px;margin-bottom:-5px" src="img/ico/gongshang.png" /><a href="https://beian.miit.gov.cn/" target="_blank" ><span style="color:#ff0000">湘ICP备2022024249号</a>
+                        <font style="font-size:16px"><img style="width:25px;height:25px;margin-bottom:-5px" src="img/ico/icpg.png" /><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=43312202000177" target="_blank" ><span style="color:#ff0000">湘公网安备43312202000177号</a>
+                        <font style="font-size:16px"><img style="width:32px;height:32px;margin-bottom:-8px" src="img/ico/icp.gov.moe.png" /><a href="https://icp.gov.moe" target="_blank"><span style="color:#ff0000">萌</span><span style="color:#ca7900">I</span><span style="color:#48ab18">C</span><span style="color:#2720ac">P</span><span style="color:#9b17ae">备</span> </a><a href="https://icp.gov.moe/?keyword=20224041" target="_blank"> <span style="color:#ff0000">20</span><span style="color:#ca7900">22</span><span style="color:#48ab18">40</span><span style="color:#2720ac">41</span><span style="color:#f40428">号</span></a></font></p>
 						<p class="copyright"><font size="2"> <span style="color:#48ab18">Copyright</span> <span style="color:#ff0000"> <a href="https://lsy041.com" target="_blank" >041专属</a></span> <span style="color:#9b17ae"> &copy;</span><span style="color:#ca7900"><span id="lsy041"><!--<script>document.write(new Date().getFullYear())</script>--></span></span><span style="color:#2720ac"> All Rights Reserved</span>
 						Design By <a href="https://lsy041.com" target="_blank" >041专属</a>
 						</p>

@@ -66,8 +66,7 @@ body{
 	height: 100%;
 	min-width: 300px;
 	z-index: 2;
-	/*cursor:url('./style/default.png'), url(../../style/default.png), auto;
-	*/
+	/*cursor:url('./style/default.png'), url(../../style/default.png), auto;*/
 }
 body{cursor: url(https://www.lsy041.cf/img/cur/normal.cur), auto}
 p{cursor: url(https://www.lsy041.cf/img/cur/texto.cur), auto}	
