@@ -68,12 +68,12 @@ body{
 	z-index: 2;
 	/*cursor:url('./style/default.png'), url(../../style/default.png), auto;*/
 }
-body{cursor: url(https://www.lsy041.cf/img/cur/normal.cur), auto}
-p{cursor: url(https://www.lsy041.cf/img/cur/texto.cur), auto}	
-a{cursor: url(https://www.lsy041.cf/img/cur/ayuda.cur), auto }
-a:hover{cursor:url(https://www.lsy041.cf/img/cur/No_Disponible.cur), pointer;}
-a:active {cursor: url(https://www.lsy041.cf/img/cur/work.cur), alias}
-span {cursor: url(https://www.lsy041.cf/img/cur/work.cur), auto}
+body{cursor: url(https://lsy041.eu.org/img/cur/normal.cur), auto}
+p{cursor: url(https://lsy041.eu.org/img/cur/texto.cur), auto}	
+a{cursor: url(https://lsy041.eu.org/img/cur/ayuda.cur), auto }
+a:hover{cursor:url(https://lsy041.eu.org/img/cur/No_Disponible.cur), pointer;}
+a:active {cursor: url(https://lsy041.eu.org/img/cur/work.cur), alias}
+span {cursor: url(https://lsy041.eu.org/img/cur/work.cur), auto}
 
 body:before {
   content: ' ';
